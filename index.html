@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>🌟 Word Quest 🌟</h1>
+
+    <!-- Game screen -->
+    <section id="game">
+      <div class="stats">
+        <span>Question: <b id="question-number">1</b>/100</span>
+        <span>⭐ Score: <b id="score">0</b></span>
+      </div>
+      <div class="emoji" id="emoji"></div>
+      <div class="word" id="word"></div>
+      <div class="choices" id="choices"></div>
+      <div id="message"></div>
+    </section>
+
+    <!-- End screen -->
+    <section id="end" hidden></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

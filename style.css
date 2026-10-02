@@ -1,0 +1,102 @@
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
+}
+
+/* ---------- Card ---------- */
+.card {
+  background: #fff;
+  width: 92%;
+  max-width: 440px;
+  padding: 24px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  margin: 0 0 8px;
+  color: #6c5ce7;
+}
+
+/* ---------- Game screen ---------- */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.emoji {
+  font-size: 96px;
+  margin: 10px 0;
+}
+
+.word {
+  font-size: 44px;
+  letter-spacing: 8px;
+  margin: 10px 0 20px;
+  color: #2d3436;
+}
+
+#message {
+  height: 32px;
+  margin-top: 16px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ---------- Letter buttons ---------- */
+.choices {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.choices button {
+  font-family: inherit;
+  font-size: 32px;
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 18px;
+  background: #ffeaa7;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.choices button:hover {
+  transform: scale(1.1);
+}
+
+.choices button.right {
+  background: #55efc4;
+}
+
+.choices button.wrong {
+  background: #ff7675;
+}
+
+/* ---------- End screen ---------- */
+.play-again {
+  margin-top: 16px;
+  padding: 12px 28px;
+  font-family: inherit;
+  font-size: 22px;
+  color: #fff;
+  background: #6c5ce7;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
